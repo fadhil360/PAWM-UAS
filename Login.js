@@ -26,9 +26,6 @@ const LoginPage = ({ navigation }) => {
     }
   };
 
-  const handleGuestLogin = () => {
-    navigation.replace('MainPage'); // Navigate directly to MainMenu
-  };
 
   return (
     <View style={styles.container}>
@@ -64,10 +61,6 @@ const LoginPage = ({ navigation }) => {
         onPress={() => navigation.replace('Signup')}
       >
         <Text style={styles.linkText}>Don't have an account? Sign Up</Text>
-      </TouchableOpacity>
-
-      <TouchableOpacity style={[styles.button, styles.guestButton]} onPress={handleGuestLogin}>
-        <Text style={styles.buttonText}>Login as Guest</Text>
       </TouchableOpacity>
     </View>
   );
